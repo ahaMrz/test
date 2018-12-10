@@ -43,12 +43,12 @@ public class TestFactory {
 
 		return files;
 	}
-	@SuppressWarnings("rawtypes")
-	public static void main(String[] args) {
-		TestNG testNG = new TestNG();
-		Class[] adsa = {TestFactory.class};
-		testNG.setTestClasses(adsa);
-		testNG.run();
-
-	}
+//	@SuppressWarnings("rawtypes")
+//	public static void main(String[] args) {
+//		TestNG testNG = new TestNG();
+//		Class[] adsa = {TestFactory.class};
+//		testNG.setTestClasses(adsa);
+//		testNG.run();
+//
+//	}
 }
