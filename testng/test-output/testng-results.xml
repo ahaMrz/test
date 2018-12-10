@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="9674" started-at="2018-12-05T13:36:39Z" finished-at="2018-12-05T13:36:48Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="9674" started-at="2018-12-05T13:36:39Z" finished-at="2018-12-05T13:36:48Z">
+      <class name="com.testng.testng.WebTest">
+        <test-method status="PASS" signature="BeforeClass()[pri:0, instance:com.testng.testng.WebTest@3bd40a57]" name="BeforeClass" is-config="true" duration-ms="5" started-at="2018-12-05T13:36:39Z" finished-at="2018-12-05T13:36:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method status="PASS" signature="f(Util.CaseModel)[pri:0, instance:com.testng.testng.WebTest@1a0dcaa]" name="f" duration-ms="4729" started-at="2018-12-05T13:36:39Z" data-provider="dp" finished-at="2018-12-05T13:36:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CaseModel [caseName=百度搜索, stepModels=[StepModel [step=打开搜狗首页, Element=https://www.sogou.com/, type=null, action=get
+, value=null, expect=null, object=driver]
+, StepModel [step=输入测试, Element=//*[@id="query"], type=XPath, action=sendkeys
+, value=搜狗搜索, expect=null, object=element]
+, StepModel [step=点击搜索, Element=//*[@id="stb"], type=XPath, action=click
+, value=null, expect=null, object=element]
+]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="AfterClass()[pri:0, instance:com.testng.testng.WebTest@3bd40a57]" name="AfterClass" is-config="true" duration-ms="584" started-at="2018-12-05T13:36:44Z" finished-at="2018-12-05T13:36:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterClass -->
+        <test-method status="PASS" signature="BeforeClass()[pri:0, instance:com.testng.testng.WebTest@3bd40a57]" name="BeforeClass" is-config="true" duration-ms="1" started-at="2018-12-05T13:36:44Z" finished-at="2018-12-05T13:36:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method status="PASS" signature="f(Util.CaseModel)[pri:0, instance:com.testng.testng.WebTest@3bd40a57]" name="f" duration-ms="3116" started-at="2018-12-05T13:36:44Z" data-provider="dp" finished-at="2018-12-05T13:36:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CaseModel [caseName=百度搜索, stepModels=[StepModel [step=打开百度页面, Element=https://www.baidu.com/, type=, action=get
+, value=, expect=, object=driver]
+, StepModel [step=输入测试, Element=//*[@id="kw"], type=XPath, action=sendkeys
+, value=测试, expect=, object=element]
+, StepModel [step=点击搜索, Element=//*[@id="su"], type=XPath, action=click
+, value=, expect=, object=element]
+]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="f(Util.CaseModel)[pri:0, instance:com.testng.testng.WebTest@3bd40a57]" name="f" duration-ms="634" started-at="2018-12-05T13:36:47Z" data-provider="dp" finished-at="2018-12-05T13:36:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CaseModel [caseName=百度搜索, stepModels=[StepModel [step=打开百度页面, Element=https://www.baidu.com/, type=, action=get
+, value=, expect=null, object=driver]
+, StepModel [step=输入测试, Element=//*[@id="kw"], type=XPath, action=sendkeys
+, value=测试dsadasdsa, expect=null, object=element]
+, StepModel [step=点击搜索, Element=//*[@id="su"], type=XPath, action=click
+, value=, expect=null, object=element]
+]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="AfterClass()[pri:0, instance:com.testng.testng.WebTest@3bd40a57]" name="AfterClass" is-config="true" duration-ms="593" started-at="2018-12-05T13:36:48Z" finished-at="2018-12-05T13:36:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterClass -->
+      </class> <!-- com.testng.testng.WebTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

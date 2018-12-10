@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Command line suite]">
+  <test thread-count="5" name="Command line test(failed)">
+    <classes>
+      <class name="com.testng.testng.WebTest">
+        <methods>
+          <include name="AfterClass"/>
+          <include name="BeforeClass"/>
+          <include name="f" invocation-numbers="0"/>
+          <include name="f" invocation-numbers="0"/>
+          <include name="f" invocation-numbers="0"/>
+          <include name="f" invocation-numbers="0"/>
+          <include name="f" invocation-numbers="0"/>
+          <include name="f" invocation-numbers="0"/>
+          <include name="f" invocation-numbers="0"/>
+          <include name="f" invocation-numbers="0"/>
+          <include name="f" invocation-numbers="0"/>
+          <include name="f" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.testng.testng.WebTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
