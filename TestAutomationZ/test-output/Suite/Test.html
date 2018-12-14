@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Dec 12 18:10:28 CST 2018</td>
+<td>Started on:</td><td>Fri Dec 14 18:32:10 CST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>9 seconds (9025 ms)</td>
+<tr><td>Total time:</td><td>5 seconds (5581 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,38 +75,39 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.testng.testng.WebTest.f()'><b>f</b><br>Test class: com.testng.testng.WebTest<br>Parameters: CaseModel [caseName=百度搜索, stepModels=[StepModel [step=打开搜狗首页, Element=https://www.sogou.com/, type=null, action=get
-, value=null, expect=null, object=driver]
-, StepModel [step=输入测试, Element=//*[@id="query"], type=XPath, action=sendkeys
-, value=搜狗搜索, expect=null, object=element]
-, StepModel [step=点击搜索, Element=//*[@id="stb"], type=XPath, action=click
-, value=null, expect=null, object=element]
+<td title='com.testng.testng.WebTest.f()'><b>f</b><br>Test class: com.testng.testng.WebTest<br>Parameters: CaseModel [caseName=百度搜索, stepModels=[StepModel [step=打开搜百度首页, Element=ElementModel [elementName=百度url, elementValue=https://www.baidu.com/, elementByType=url]
+, action=get
+, value=null, expect=null]
+, StepModel [step=输入测试, Element=ElementModel [elementName=搜索输入框, elementValue=//*[@id="kw"], elementByType=XPath]
+, action=sendkeys
+, value=测试, expect=null]
+, StepModel [step=点击搜索, Element=ElementModel [elementName=搜索按钮, elementValue=//*[@id="su"], elementByType=XPath]
+, action=click
+, value=null, expect=null]
+, StepModel [step=检查搜索结果, Element=ElementModel [elementName=关键字标记, elementValue=//em[1], elementByType=XPath]
+, action=gettext
+, value=测试, expect=测试]
 ]]</td>
 <td></td>
-<td>3</td>
-<td>com.testng.testng.WebTest@1d2adfbe</td></tr>
+<td>4</td>
+<td>com.testng.testng.WebTest@5876a9af</td></tr>
 <tr>
-<td title='com.testng.testng.WebTest.f()'><b>f</b><br>Test class: com.testng.testng.WebTest<br>Parameters: CaseModel [caseName=百度搜索, stepModels=[StepModel [step=打开百度页面, Element=https://www.baidu.com/, type=, action=get
-, value=, expect=, object=driver]
-, StepModel [step=输入测试, Element=//*[@id="kw"], type=XPath, action=sendkeys
-, value=测试, expect=, object=element]
-, StepModel [step=点击搜索, Element=//*[@id="su"], type=XPath, action=click
-, value=, expect=, object=element]
-]]</td>
-<td></td>
-<td>3</td>
-<td>com.testng.testng.WebTest@36902638</td></tr>
-<tr>
-<td title='com.testng.testng.WebTest.f()'><b>f</b><br>Test class: com.testng.testng.WebTest<br>Parameters: CaseModel [caseName=百度搜索, stepModels=[StepModel [step=打开百度页面, Element=https://www.baidu.com/, type=, action=get
-, value=, expect=null, object=driver]
-, StepModel [step=输入测试, Element=//*[@id="kw"], type=XPath, action=sendkeys
-, value=测试dsadasdsa, expect=null, object=element]
-, StepModel [step=点击搜索, Element=//*[@id="su"], type=XPath, action=click
-, value=, expect=null, object=element]
+<td title='com.testng.testng.WebTest.f()'><b>f</b><br>Test class: com.testng.testng.WebTest<br>Parameters: CaseModel [caseName=错误用例, stepModels=[StepModel [step=打开搜百度首页, Element=ElementModel [elementName=百度url, elementValue=https://www.baidu.com/, elementByType=url]
+, action=get
+, value=null, expect=null]
+, StepModel [step=输入测试, Element=ElementModel [elementName=搜索输入框, elementValue=//*[@id="kw"], elementByType=XPath]
+, action=sendkeys
+, value=测试, expect=null]
+, StepModel [step=点击搜索, Element=ElementModel [elementName=搜索按钮, elementValue=//*[@id="su"], elementByType=XPath]
+, action=click
+, value=null, expect=null]
+, StepModel [step=检查搜索结果, Element=ElementModel [elementName=关键字标记, elementValue=//em[1], elementByType=XPath]
+, action=gettext
+, value=测试, expect=测试]
 ]]</td>
 <td></td>
 <td>0</td>
-<td>com.testng.testng.WebTest@36902638</td></tr>
+<td>com.testng.testng.WebTest@5876a9af</td></tr>
 </table><p>
 </body>
 </html>

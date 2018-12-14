@@ -7,8 +7,8 @@ import java.util.List;
 import org.testng.TestNG;
 import org.testng.annotations.Factory;
 
-import TestAutomationZ.CaseModel;
-import TestAutomationZ.CaseType;
+
+import TestAutomationZ.Case.CaseModel;
 
 public class TestFactory {
 	@Factory
@@ -16,9 +16,8 @@ public class TestFactory {
 		List<String> pathList = getCasePathList();
 		Object[] result = new Object[pathList.size()];
 		for (int i = 0; i < pathList.size(); i++) {
-			CaseModel.getCaseList(pathList.get(i), CaseType.publicCase);
-			result[i] = new WebTest(CaseModel.getCaseList(pathList.get(i), CaseType.publicCase),
-					CaseModel.getCaseList(pathList.get(i), CaseType.ordinaryCase));
+//			CaseModel.getCaseList(pathList.get(i), CaseType.publicCase);
+			result[i] = new WebTest(CaseModel.getCaseList(pathList.get(i)));
 		}
 		return result;
 	}

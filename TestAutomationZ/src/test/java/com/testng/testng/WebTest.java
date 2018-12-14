@@ -7,18 +7,15 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import TestAutomationZ.CaseModel;
-import TestAutomationZ.CaseType;
-import TestAutomationZ.Driver;
-import TestAutomationZ.StepModel;
-import TestAutomationZ.WebElementZ;
+import TestAutomationZ.Case.CaseModel;
+import TestAutomationZ.Case.StepModel;
+import TestAutomationZ.Selenium.Driver;
+import TestAutomationZ.Selenium.WebElementZ;
 
 public class WebTest {
-	private List<CaseModel> publicCaseList;
 	private List<CaseModel> caseList;
 	  @SuppressWarnings("static-access")
-	public WebTest(List<CaseModel> publicCaseList,List<CaseModel> caseList) {
-		  this.publicCaseList = publicCaseList;
+	public WebTest(List<CaseModel> caseList) {
 		  this.caseList = caseList; 
 	  }
 	 
@@ -49,15 +46,14 @@ public class WebTest {
 			return objects;
 		}
 		
-		//根据casel模型执行用例
+		//根据case模型执行用例
 		public void doCase(CaseModel caseModel) {
 			for (int i = 0; i < caseModel.getStepModels().size(); i++) {
 				StepModel stepModel = caseModel.getStepModels().get(i);
-				System.out.println(stepModel);
-				String object = stepModel.getObject();
+//				System.out.println(stepModel);
 				if (stepModel.getPrecondition() != null) {
 					//执行前置条件
-					for (CaseModel caseModel2 : publicCaseList) {
+					for (CaseModel caseModel2 : caseList) {
 						if (stepModel.getPrecondition().equals(caseModel2.getCaseName())) {
 							//根据casename查找到说要执行的公共用例
 							doCase(caseModel2);
@@ -65,12 +61,8 @@ public class WebTest {
 						}
 					}
 				}
-				if (object.equals("driver")) {
-					Driver.action(stepModel);
-				} else {
-					//懒得写elseif。这里假装判断了是element
+			
 					WebElementZ.ElementAction(stepModel);
-				}
 			}
 		}
 	  

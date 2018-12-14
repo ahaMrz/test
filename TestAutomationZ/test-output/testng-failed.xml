@@ -6,7 +6,7 @@
       <class name="com.testng.testng.WebTest">
         <methods>
           <include name="BeforeClass"/>
-          <include name="f" invocation-numbers="0"/>
+          <include name="f" invocation-numbers="0 1"/>
           <include name="AfterClass"/>
         </methods>
       </class> <!-- com.testng.testng.WebTest -->

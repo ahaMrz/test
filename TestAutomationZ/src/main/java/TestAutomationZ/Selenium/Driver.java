@@ -1,9 +1,11 @@
-package TestAutomationZ;
+package TestAutomationZ.Selenium;
 
 import java.util.concurrent.TimeUnit;
 
 
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import TestAutomationZ.Case.StepModel;
 
 public class Driver {
     static	ChromeDriver chromeDriver;
@@ -41,7 +43,7 @@ public class Driver {
     public static void action(StepModel step) {
     	String action = step.getAction();
     	if (action.equals("get")) {
-			get(step.getElement());
+			get(step.getElement().getElementValue());
 		}else if (action.equals("refresh")) {
 			refresh();
 		}else {

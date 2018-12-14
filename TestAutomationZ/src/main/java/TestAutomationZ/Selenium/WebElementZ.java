@@ -1,4 +1,4 @@
-package TestAutomationZ;
+package TestAutomationZ.Selenium;
 
 //import static org.testng.Assert.assertEquals;
 
@@ -11,6 +11,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.Assertion;
+
+import TestAutomationZ.Case.StepModel;
 
 public class WebElementZ {
 	
@@ -51,8 +53,8 @@ public class WebElementZ {
 	public static String ElementAction(StepModel step) {
 //		WebDriverWait wait = new WebDriverWait(Driver.getChromeDriver(), 10);
 		String action = step.getAction();
-		String element = step.getElement();
-		String type = step.getType();
+		String element = step.getElement().getElementValue();
+		String type = step.getElement().getElementByType();
 		if (action.equals("click")) {
 		getWebElement(type, element).click();
 		} else if (action.equals("sendkeys")) {
@@ -66,7 +68,7 @@ public class WebElementZ {
 		} else if (action.equals("gettext")) {
 			String actual = getWebElement(type, element).getText();
 			Assertion asserts = new Assertion();
-			asserts.assertEquals(step.expect, actual);
+			asserts.assertEquals(step.getExpect(), actual);
 		} else if (action.equals("movetoelement")) {
 			Actions actions = new Actions(Driver.getChromeDriver());
 			actions.moveToElement(getWebElement(type, element)).perform();
@@ -83,6 +85,8 @@ public class WebElementZ {
 //		wait.until(ExpectedConditions.elementToBeClickable(getWebElement(type, element)));
 			actions.click(getWebElement(type, element)).perform();
 			
+		}else if (action.equals("get")) {
+			Driver.get(element);
 		}
 		return type;
 	}

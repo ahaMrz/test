@@ -1,18 +1,18 @@
-package TestAutomationZ;
+package TestAutomationZ.Case;
+
+import TestAutomationZ.WebPage.ElementModel;
 
 public class StepModel {
 	String step;
-	String Element;
+	ElementModel Element;
     String precondition;
-	String type;
+//	String type;
 	String action;
 	String value;
 	String expect;
-	String object;
+	
 
-	public String getObject() {
-		return object;
-	}
+
 
 	public String getPrecondition() {
 		return precondition;
@@ -22,9 +22,6 @@ public class StepModel {
 		this.precondition = precondition;
 	}
 
-	public void setObject(String object) {
-		this.object = object;
-	}
 
 	public String getExpect() {
 		return expect;
@@ -42,21 +39,23 @@ public class StepModel {
 		this.step = step;
 	}
 
-	public String getElement() {
+
+
+	public ElementModel getElement() {
 		return Element;
 	}
 
-	public void setElement(String element) {
+	public void setElement(ElementModel element) {
 		Element = element;
 	}
 
-	public String getType() {
-		return type;
-	}
-
-	public void setType(String type) {
-		this.type = type;
-	}
+//	public String getType() {
+//		return type;
+//	}
+//
+//	public void setType(String type) {
+//		this.type = type;
+//	}
 
 	public String getAction() {
 		return action;
@@ -76,8 +75,8 @@ public class StepModel {
 
 	@Override
 	public String toString() {
-		return "StepModel [step=" + step + ", Element=" + Element + ", type=" + type + ", action=" + action +"\n"+ ", value="
-				+ value + ", expect=" + expect + ", object=" + object + "]"+"\n";
+		return "StepModel [step=" + step + ", Element=" + Element + ", action=" + action +"\n"+ ", value="
+				+ value + ", expect=" + expect  + "]"+"\n";
 	}
 
 
