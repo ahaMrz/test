@@ -34,7 +34,7 @@ public class WebPageModel {
 
 	public WebPageModel() {
 		// TODO Auto-generated constructor stub
-		super();
+//		super();
 		this.elements = new ArrayList<ElementModel>();
 	}
 
@@ -104,10 +104,10 @@ public class WebPageModel {
 		return webPageList;
 	}
 
-	public static void main(String[] args) {
-		List<WebPageModel> webPageModels = getWebPageList("C:\\Users\\Administrator\\Desktop\\新建文件夹\\搜狗.xlsx");
-		 System.out.println(webPageModels);
-	}
+//	public static void main(String[] args) {
+//		List<WebPageModel> webPageModels = getWebPageList("C:\\Users\\Administrator\\Desktop\\新建文件夹\\搜狗.xlsx");
+//		 System.out.println(webPageModels);
+//	}
 
 	@Override
 	public String toString() {

@@ -144,8 +144,6 @@ public class CaseModel {
 		}
 		return caseModels;
 	}
-//	public static void main(String[] args) {
-//		 System.out.println(getCaseList("C:\\Users\\Administrator\\Desktop\\新建文件夹\\搜狗.xlsx").size());
-//	}
+
 
 }

@@ -1,7 +1,5 @@
 package TestAutomationZ.WebPage;
 
-import java.util.List;
-
 public class ElementModel {
 	String elementName;
 	String elementValue;
