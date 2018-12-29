@@ -3,13 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.testng.testng.WebTest">
+      <class name="com.testng.testng.web.WebTest">
         <methods>
+          <include name="AfterClass"/>
           <include name="BeforeClass"/>
           <include name="f" invocation-numbers="1"/>
-          <include name="AfterClass"/>
         </methods>
-      </class> <!-- com.testng.testng.WebTest -->
+      </class> <!-- com.testng.testng.web.WebTest -->
+      <class name="com.testng.testng.api.APITest">
+        <methods>
+          <include name="f" invocation-numbers="2"/>
+        </methods>
+      </class> <!-- com.testng.testng.api.APITest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,7 +102,12 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.testng.testng.WebTest" hash-for-method="f(CaseModel [caseName=错误用例, stepModels=[StepModel [step=打开搜百度首页, Element=ElementModel [elementName=百度u...)">f(CaseModel [caseName=错误用例, stepModels=[StepModel [step=打开搜百度首页, Element=ElementModel [elementName=百度u...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.testng.testng.api.APITest" hash-for-method="f(CaseModel [caseName=用户注册, stepModels=[StepModel [step=正确注册, url=http://localhost:8080/register, acti...)">f(CaseModel [caseName=用户注册, stepModels=[StepModel [step=正确注册, url=http://localhost:8080/register, acti...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.testng.testng.web.WebTest" hash-for-method="f(CaseModel [caseName=错误用例, stepModels=[StepModel [step=打开搜百度首页, Element=ElementModel [elementName=百度u...)">f(CaseModel [caseName=错误用例, stepModels=[StepModel [step=打开搜百度首页, Element=ElementModel [elementName=百度u...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -116,7 +121,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.testng.testng.WebTest" hash-for-method="f(CaseModel [caseName=百度搜索, stepModels=[StepModel [step=打开搜百度首页, Element=ElementModel [elementName=百度u...)">f(CaseModel [caseName=百度搜索, stepModels=[StepModel [step=打开搜百度首页, Element=ElementModel [elementName=百度u...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.testng.testng.web.WebTest" hash-for-method="f(CaseModel [caseName=百度搜索, stepModels=[StepModel [step=打开搜百度首页, Element=ElementModel [elementName=百度u...)">f(CaseModel [caseName=百度搜索, stepModels=[StepModel [step=打开搜百度首页, Element=ElementModel [elementName=百度u...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.testng.testng.api.APITest" hash-for-method="f(CaseModel [caseName=查询不存在的用户, stepModels=[StepModel [step=查询不存在的用户, url=http://localhost:8080/select...)">f(CaseModel [caseName=查询不存在的用户, stepModels=[StepModel [step=查询不存在的用户, url=http://localhost:8080/select...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.testng.testng.api.APITest" hash-for-method="f(CaseModel [caseName=不传用户名注册, stepModels=[StepModel [step=不输入用户名, url=http://localhost:8080/register,...)">f(CaseModel [caseName=不传用户名注册, stepModels=[StepModel [step=不输入用户名, url=http://localhost:8080/register,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.testng.testng.api.APITest" hash-for-method="f(CaseModel [caseName=查询用户名, stepModels=[StepModel [step=查询已存在的用户, url=http://localhost:8080/selectUse...)">f(CaseModel [caseName=查询用户名, stepModels=[StepModel [step=查询已存在的用户, url=http://localhost:8080/selectUse...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -134,7 +154,7 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.testng.testng.WebTest</span>
+              <span class="class-name">com.testng.testng.web.WebTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -157,9 +177,33 @@
 ]])</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [测试] but found [测试1]
 	at TestAutomationZ.Selenium.WebElementZ.ElementAction(WebElementZ.java:71)
-	at com.testng.testng.WebTest.doCase(WebTest.java:65)
-	at com.testng.testng.WebTest.f(WebTest.java:25)
+	at com.testng.testng.web.WebTest.doCase(WebTest.java:65)
+	at com.testng.testng.web.WebTest.f(WebTest.java:25)
 ... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.testng.testng.api.APITest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="f(CaseModel [caseName=用户注册, stepModels=[StepModel [step=正确注册, url=http://localhost:8080/register, acti...)">
+                  </a> <!-- f(CaseModel [caseName=用户注册, stepModels=[StepModel [step=正确注册, url=http://localhost:8080/register, acti...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">(CaseModel [caseName=用户注册, stepModels=[StepModel [step=正确注册, url=http://localhost:8080/register, action=post
+, value={param:{'user':'testname','pwd':'000000'}}, expect={"body":{"result":{"user":"testname","pwd":"000000"}},"status":"成功"}]
+]]
+)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [{&quot;body&quot;:{&quot;result&quot;:{&quot;user&quot;:&quot;testname&quot;,&quot;pwd&quot;:&quot;000000&quot;}},&quot;status&quot;:&quot;成功&quot;}] but found [{&quot;body&quot;:{&quot;result&quot;:&quot;换个用户名&quot;},&quot;status&quot;:&quot;失败&quot;}]
+	at com.testng.testng.api.APITest.doCase(APITest.java:38)
+	at com.testng.testng.api.APITest.f(APITest.java:26)
+... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -168,7 +212,7 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.testng.testng.WebTest</span>
+              <span class="class-name">com.testng.testng.web.WebTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -193,6 +237,47 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testng.testng.api.APITest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="f(CaseModel [caseName=查询不存在的用户, stepModels=[StepModel [step=查询不存在的用户, url=http://localhost:8080/select...)">
+                  </a> <!-- f(CaseModel [caseName=查询不存在的用户, stepModels=[StepModel [step=查询不存在的用户, url=http://localhost:8080/select...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">(CaseModel [caseName=查询不存在的用户, stepModels=[StepModel [step=查询不存在的用户, url=http://localhost:8080/selectUser, action=get
+, value={param:{'name':'fdsafdsa'}}, expect={"body":{"result":"用户名不存在"},"status":"成功"}]
+]]
+)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f(CaseModel [caseName=不传用户名注册, stepModels=[StepModel [step=不输入用户名, url=http://localhost:8080/register,...)">
+                  </a> <!-- f(CaseModel [caseName=不传用户名注册, stepModels=[StepModel [step=不输入用户名, url=http://localhost:8080/register,...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">(CaseModel [caseName=不传用户名注册, stepModels=[StepModel [step=不输入用户名, url=http://localhost:8080/register, action=post
+, value={param:{'pwd':'000000'}}, expect={"body":{"result":"用户名或密码不能为空"},"status":"失败"}]
+]]
+)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f(CaseModel [caseName=查询用户名, stepModels=[StepModel [step=查询已存在的用户, url=http://localhost:8080/selectUse...)">
+                  </a> <!-- f(CaseModel [caseName=查询用户名, stepModels=[StepModel [step=查询已存在的用户, url=http://localhost:8080/selectUse...) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">(CaseModel [caseName=查询用户名, stepModels=[StepModel [step=查询已存在的用户, url=http://localhost:8080/selectUser, action=get
+, value={param:{'name':'123'},headers:{"Cookie":"testcookie=test"}}, expect={"body":{"result":"用户名已存在"},"status":"成功"}]
+]]
+)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -205,7 +290,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.testng.testng.TestFactory&quot;/&gt;
+      &lt;class name=&quot;com.testng.testng.web.TestFactory&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -245,20 +330,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'f')
-data.setCell(0, 2, 'com.testng.testng.WebTest')
-data.setCell(0, 3, 4396);
+data.setCell(0, 2, 'com.testng.testng.web.WebTest')
+data.setCell(0, 3, 8590);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'f')
-data.setCell(1, 2, 'com.testng.testng.WebTest')
-data.setCell(1, 3, 807);
+data.setCell(1, 2, 'com.testng.testng.web.WebTest')
+data.setCell(1, 3, 2226);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'f')
+data.setCell(2, 2, 'com.testng.testng.api.APITest')
+data.setCell(2, 3, 133);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'f')
+data.setCell(3, 2, 'com.testng.testng.api.APITest')
+data.setCell(3, 3, 110);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'f')
+data.setCell(4, 2, 'com.testng.testng.api.APITest')
+data.setCell(4, 3, 30);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'f')
+data.setCell(5, 2, 'com.testng.testng.api.APITest')
+data.setCell(5, 3, 6);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -284,24 +385,45 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.testng.testng.WebTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.testng.testng.api.APITest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">f(CaseModel [caseName=查询用户名, stepModels=[StepModel [step=查询已存在的用户, url=http://localhost:8080/selectUse...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">f(CaseModel [caseName=查询不存在的用户, stepModels=[StepModel [step=查询不存在的用户, url=http://localhost:8080/select...)</span>
+                <span class="method-start">136 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">f(CaseModel [caseName=用户注册, stepModels=[StepModel [step=正确注册, url=http://localhost:8080/register, acti...)</span>
+                <span class="method-start">248 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">f(CaseModel [caseName=不传用户名注册, stepModels=[StepModel [step=不输入用户名, url=http://localhost:8080/register,...)</span>
+                <span class="method-start">281 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testng.testng.web.WebTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">BeforeClass</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">289 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">f(CaseModel [caseName=百度搜索, stepModels=[StepModel [step=打开搜百度首页, Element=ElementModel [elementName=百度u...)</span>
-                <span class="method-start">11 ms</span>
+                <span class="method-start">290 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">f(CaseModel [caseName=错误用例, stepModels=[StepModel [step=打开搜百度首页, Element=ElementModel [elementName=百度u...)</span>
-                <span class="method-start">4409 ms</span>
+                <span class="method-start">8881 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">AfterClass</span>
-                <span class="method-start">5218 ms</span>
+                <span class="method-start">11109 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

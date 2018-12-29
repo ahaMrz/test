@@ -3,6 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+    
       <class name="com.testng.testng.TestFactory"/>
     </classes>
   </test> <!-- Test -->

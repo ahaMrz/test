@@ -9,11 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">5,808</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num attn">2</td><td class="num">11,732</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.testng.testng.WebTest</td><td><a href="#m0">f</a></td><td rowspan="1">1544789622044</td><td rowspan="1">807</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.testng.testng.WebTest</td><td><a href="#m1">f</a></td><td rowspan="1">1544789617646</td><td rowspan="1">4396</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.testng.testng.api.APITest</td><td><a href="#m0">f</a></td><td rowspan="1">1546071983126</td><td rowspan="1">30</td></tr><tr class="failedodd"><td rowspan="1">com.testng.testng.web.WebTest</td><td><a href="#m1">f</a></td><td rowspan="1">1546071991759</td><td rowspan="1">2226</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.testng.testng.api.APITest</td><td><a href="#m2">f</a></td><td rowspan="3">1546071983014</td><td rowspan="3">110</td></tr><tr class="passedeven"><td><a href="#m3">f</a></td></tr><tr class="passedeven"><td><a href="#m4">f</a></td></tr><tr class="passedodd"><td rowspan="1">com.testng.testng.web.WebTest</td><td><a href="#m5">f</a></td><td rowspan="1">1546071983168</td><td rowspan="1">8590</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.testng.testng.WebTest#f</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>CaseModel [caseName=错误用例, stepModels=[StepModel [step=打开搜百度首页, Element=ElementModel [elementName=百度url, elementValue=https://www.baidu.com/, elementByType=url]
+<h2>Test</h2><h3 id="m0">com.testng.testng.api.APITest#f</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>CaseModel [caseName=用户注册, stepModels=[StepModel [step=正确注册, url=http://localhost:8080/register, action=post
+, value={param:{&apos;user&apos;:&apos;testname&apos;,&apos;pwd&apos;:&apos;000000&apos;}}, expect={&quot;body&quot;:{&quot;result&quot;:{&quot;user&quot;:&quot;testname&quot;,&quot;pwd&quot;:&quot;000000&quot;}},&quot;status&quot;:&quot;成功&quot;}]
+]]
+</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [{&quot;body&quot;:{&quot;result&quot;:{&quot;user&quot;:&quot;testname&quot;,&quot;pwd&quot;:&quot;000000&quot;}},&quot;status&quot;:&quot;成功&quot;}] but found [{&quot;body&quot;:{&quot;result&quot;:&quot;换个用户名&quot;},&quot;status&quot;:&quot;失败&quot;}]
+	at com.testng.testng.api.APITest.doCase(APITest.java:38)
+	at com.testng.testng.api.APITest.f(APITest.java:26)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.testng.testng.web.WebTest#f</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>CaseModel [caseName=错误用例, stepModels=[StepModel [step=打开搜百度首页, Element=ElementModel [elementName=百度url, elementValue=https://www.baidu.com/, elementByType=url]
 , action=get
 , value=null, expect=null]
 , StepModel [step=输入测试, Element=ElementModel [elementName=搜索输入框, elementValue=//*[@id=&quot;kw&quot;], elementByType=XPath]
@@ -27,10 +34,22 @@
 , value=测试, expect=测试1]
 ]]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [测试] but found [测试1]
 	at TestAutomationZ.Selenium.WebElementZ.ElementAction(WebElementZ.java:71)
-	at com.testng.testng.WebTest.doCase(WebTest.java:65)
-	at com.testng.testng.WebTest.f(WebTest.java:25)
+	at com.testng.testng.web.WebTest.doCase(WebTest.java:65)
+	at com.testng.testng.web.WebTest.f(WebTest.java:25)
 ... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.testng.testng.WebTest#f</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>CaseModel [caseName=百度搜索, stepModels=[StepModel [step=打开搜百度首页, Element=ElementModel [elementName=百度url, elementValue=https://www.baidu.com/, elementByType=url]
+<h3 id="m2">com.testng.testng.api.APITest#f</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>CaseModel [caseName=查询不存在的用户, stepModels=[StepModel [step=查询不存在的用户, url=http://localhost:8080/selectUser, action=get
+, value={param:{&apos;name&apos;:&apos;fdsafdsa&apos;}}, expect={&quot;body&quot;:{&quot;result&quot;:&quot;用户名不存在&quot;},&quot;status&quot;:&quot;成功&quot;}]
+]]
+</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.testng.testng.api.APITest#f</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>CaseModel [caseName=不传用户名注册, stepModels=[StepModel [step=不输入用户名, url=http://localhost:8080/register, action=post
+, value={param:{&apos;pwd&apos;:&apos;000000&apos;}}, expect={&quot;body&quot;:{&quot;result&quot;:&quot;用户名或密码不能为空&quot;},&quot;status&quot;:&quot;失败&quot;}]
+]]
+</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.testng.testng.api.APITest#f</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>CaseModel [caseName=查询用户名, stepModels=[StepModel [step=查询已存在的用户, url=http://localhost:8080/selectUser, action=get
+, value={param:{&apos;name&apos;:&apos;123&apos;},headers:{&quot;Cookie&quot;:&quot;testcookie=test&quot;}}, expect={&quot;body&quot;:{&quot;result&quot;:&quot;用户名已存在&quot;},&quot;status&quot;:&quot;成功&quot;}]
+]]
+</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.testng.testng.web.WebTest#f</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>CaseModel [caseName=百度搜索, stepModels=[StepModel [step=打开搜百度首页, Element=ElementModel [elementName=百度url, elementValue=https://www.baidu.com/, elementByType=url]
 , action=get
 , value=null, expect=null]
 , StepModel [step=输入测试, Element=ElementModel [elementName=搜索输入框, elementValue=//*[@id=&quot;kw&quot;], elementByType=XPath]

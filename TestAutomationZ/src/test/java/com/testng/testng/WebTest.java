@@ -14,7 +14,7 @@ import TestAutomationZ.Selenium.WebElementZ;
 
 public class WebTest {
 	private List<CaseModel> caseList;
-	  @SuppressWarnings("static-access")
+//	  @SuppressWarnings("static-access")
 	public WebTest(List<CaseModel> caseList) {
 		  this.caseList = caseList; 
 	  }
@@ -24,7 +24,7 @@ public class WebTest {
 			 System.out.println("执行了用例" + caseModel);
 			 doCase(caseModel);
 		}
-
+    
 		@AfterClass
 		public void AfterClass() {
 			 Driver.getChromeDriver().quit();
