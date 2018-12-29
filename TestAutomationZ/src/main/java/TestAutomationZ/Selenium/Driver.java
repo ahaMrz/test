@@ -5,7 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import TestAutomationZ.Case.StepModel;
+import TestAutomationZ.webCase.StepModel;
 
 public class Driver {
     static	ChromeDriver chromeDriver;

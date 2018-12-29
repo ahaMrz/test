@@ -1,4 +1,4 @@
-package TestAutomationZ.Case;
+package TestAutomationZ.webCase;
 
 import java.util.ArrayList;
 import java.util.List;

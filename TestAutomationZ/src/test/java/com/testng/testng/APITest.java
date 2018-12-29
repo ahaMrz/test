@@ -31,9 +31,11 @@ public class APITest {
 		for (int i = 0; i < caseModel.getStepModels().size(); i++) {
 			APIStepModel apiStepModel = caseModel.getStepModels().get(i);
 			if (apiStepModel.getAction().equals("get")) {
+				//执行get请求
 				String actual = okHttpUtil.get(apiStepModel.getUrl(), apiStepModel.getValue());
 				assertEquals(actual, apiStepModel.getExpect());
 			} else if (apiStepModel.getAction().equals("post")) {
+				//执行post请求
 				String actual = okHttpUtil.post(apiStepModel.getUrl(), apiStepModel.getValue());
 				assertEquals(actual, apiStepModel.getExpect());
 			} else {

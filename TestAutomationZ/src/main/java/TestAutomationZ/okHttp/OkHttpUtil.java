@@ -1,19 +1,14 @@
 package TestAutomationZ.okHttp;
 
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
 
-import org.apache.tools.ant.taskdefs.email.Header;
-
-import com.alibaba.fastjson.JSON;
 //import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 	
 import okhttp3.Call;
 import okhttp3.FormBody;
 import okhttp3.FormBody.Builder;
-import okhttp3.Headers;
+
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;

@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.Assertion;
 
-import TestAutomationZ.Case.StepModel;
+import TestAutomationZ.webCase.StepModel;
 
 public class WebElementZ {
 	

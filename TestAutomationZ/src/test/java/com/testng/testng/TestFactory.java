@@ -7,8 +7,8 @@ import java.util.List;
 //import org.testng.TestNG;
 import org.testng.annotations.Factory;
 
-import TestAutomationZ.Case.CaseModel;
 import TestAutomationZ.apiCase.APICaseModel;
+import TestAutomationZ.webCase.CaseModel;
 
 public class TestFactory {
 	@Factory

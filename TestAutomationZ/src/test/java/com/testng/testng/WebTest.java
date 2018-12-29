@@ -7,10 +7,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import TestAutomationZ.Case.CaseModel;
-import TestAutomationZ.Case.StepModel;
 import TestAutomationZ.Selenium.Driver;
 import TestAutomationZ.Selenium.WebElementZ;
+import TestAutomationZ.webCase.CaseModel;
+import TestAutomationZ.webCase.StepModel;
 
 public class WebTest {
 	private List<CaseModel> caseList;
